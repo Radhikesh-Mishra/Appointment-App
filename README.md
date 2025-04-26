@@ -37,7 +37,8 @@ This app is especially useful for:
 - 🎨 **CSS** — For styling components
 
 
-## 📁 Project Structure ``` appointment-app/ ├── public/ ├── src/ │ ├── components/ │ │ ├── AppointmentForm.jsx │ │ └── AppointmentList.jsx │ ├── redux/ │ │ ├── store.js │ │ └── userSlice.js │ ├── App.js │ ├── App.css │ └── index.js ├── package.json └── README.md ```
+## 📁 Project Structure 
+``` appointment-app/ ├── public/ ├── src/ │ ├── components/ │ │ ├── AppointmentForm.jsx │ │ └── AppointmentList.jsx │ ├── redux/ │ │ ├── store.js │ │ └── userSlice.js │ ├── App.js │ ├── App.css │ └── index.js ├── package.json └── README.md ```
 
 ## 🚀 Getting Started
 
