@@ -51,8 +51,11 @@ appointment-app/
 │   │   └── userSlice.js
 │   ├── App.js
 │   ├── App.css
-│   └── index.js
+│   └── main.js
+├── index.html
 ├── package.json
+├── package-lock.json
+├── vite.config.js
 └── README.md
  ```
 
