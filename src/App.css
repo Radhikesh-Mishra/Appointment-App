@@ -1,0 +1,268 @@
+.appointment-form{
+  border: .5px solid rgb(206, 204, 204);
+  margin: 25px 80px;
+}
+
+.heading{
+  background: linear-gradient(to right, rgb(21, 142, 241), blue ,rgb(186, 18, 228));
+  color: white;
+  padding: 2%;
+  margin-top: 0;
+}
+
+
+.row{
+  display: flex;
+  justify-content: space-around;
+  padding: 1%;
+}
+
+.input, select{
+  flex: 1 1 250px;
+  padding: 10px 15px;
+  margin: 0 15px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  outline: none;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus,
+select:focus {
+  border-color: #2196f3;
+}
+
+.btn {
+  background-color: #0b75d1;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bolder;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+  transition: background-color 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.btn:hover {
+  background-color: #065bb5;
+}
+
+#hidden{
+  visibility: hidden;
+}
+
+.line {
+  border: none;
+  height: 1px;
+  background-color: rgb(206, 204, 204); /* Light grey */
+  width: 100%;
+}
+
+
+
+
+.appointment-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin: 25px 30px;
+}
+
+.appointment-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
+
+.appointment-table th {
+  text-align: left;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+.tr {
+  background: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.appointment-table thead {
+  background-color: transparent;
+}
+
+.appointment-table thead tr th{
+  padding-left: 25px;
+}
+
+.appointment-table td {
+  padding: 15px;
+  vertical-align: middle;
+}
+
+.patient-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.patient-info img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.patient-info .name {
+  font-weight: 600;
+  margin: 0;
+}
+
+.patient-info .age {
+  color: #888;
+  font-size: 0.9em;
+  margin: 2px 0 0;
+}
+
+.status-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 500;
+  padding: 15%;
+  cursor: default;
+}
+
+.status-btn.consult {
+  background-color: #28a745;
+}
+
+.status-btn.revisit {
+  background-color: #007bff;
+}
+
+.time, .date, .phone {
+  margin: 0;
+}
+
+.date{
+  font-size: small;
+  color: black;
+}
+
+.contact-link {
+  color: #007bff;
+  font-size: 0.9em;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+.actions {
+  position: relative;
+}
+
+.action-dots{
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.inline-buttons {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 6px;
+  border-radius: 6px;
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 10;
+}
+
+.actions:hover .inline-buttons,
+.inline-buttons.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.btn-sm {
+  padding: 6px 14px;
+  font-size: 0.8em;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn-sm.update {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.btn-sm.update:hover {
+  background-color: #e0a800;
+}
+
+.btn-sm.delete {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn-sm.delete:hover {
+  background-color: #c82333;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 700px;
+  width: 90%;
+  position: relative;
+}
+
+.close-modal {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.heading {
+  margin-bottom: 1rem;
+}
+
+.heading-3{
+  background: linear-gradient(to right, rgb(21, 142, 241), blue ,rgb(186, 18, 228));
+  color: white;
+  text-align: center;
+  padding: 2%;
+  margin-top: 0;
+}
